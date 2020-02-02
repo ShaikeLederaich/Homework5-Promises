@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Promises HW 5</title>
+  <!--%-------------------Bootstarp----------------------------->
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <!-- %--------------------Dice Animation CSS------------->
+  <link rel="stylesheet" href="CSS/roll.css">
+  <!--%------------------JQUERY Google CDN---------------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <style>
+  
+.box {
+  width: 350px;
+  border: 1px solid black;
+  text-align: center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  margin: 5px;
+}
+.msg {
+  font-size: 26px;
+  padding-top: 20px;
+  letter-spacing: 3px;
+}
+h4 {
+  font-size: 28px;
+}
+.msg span {
+  color: rgb(207, 201, 143);
+  background-color: rgb(9, 11, 41);
+  font-size: 30px;
+  padding: 8px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-md-8 mx-auto">
+        <div class="jumbotron">
+          <form>
+            <select class="custom-select" name="chooseNum" id="chooseNum">
+              <option value="0" selected>Choose Number</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+              <button  id="btn1" class="btn btn-success mt-2 form-control">Raffle</button>
+            
+          </form>
+          <div class="w-100"></div>
+          <div id="result" class="d-flex justify-content-center mt-3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./JS/main.js"></script>
+  
+</body>
+</html>
